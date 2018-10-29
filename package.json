@@ -7,7 +7,8 @@
   "license": "MIT",
   "scripts": {
     "dev": "gulp",
-    "build": "gulp build"
+    "build": "gulp build",
+    "css-lint": "stylelint --fix --syntax scss \"src/scss/**/*.scss\""
   },
   "devDependencies": {
     "browser-sync": "^2.26.3",
@@ -20,6 +21,9 @@
     "gulp-sass": "^4.0.2",
     "gulp-sourcemaps": "^2.6.4",
     "gulp-uglify": "^3.0.1",
-    "prettier": "1.14.3"
+    "prettier": "1.14.3",
+    "stylelint": "^9.7.0",
+    "stylelint-config-recommended-scss": "^3.2.0",
+    "stylelint-scss": "^3.3.2"
   }
 }
