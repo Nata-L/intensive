@@ -1,0 +1,25 @@
+.header {
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+	padding: 2.8rem 2.5rem;
+
+	&__link {
+		color: $gray;
+		font-size: 2.4rem;
+		text-decoration: none;
+		text-transform: uppercase;
+		span {
+			color: $primary;
+		}
+	}
+
+	&__logo {
+		vertical-align: middle;
+		margin-right: 1rem;
+	}
+
+	&__cta {
+		margin-right: 2.6rem;
+	}
+}

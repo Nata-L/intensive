@@ -1,0 +1,42 @@
+.features {
+	background-color: $gray-100;
+	overflow-x: hidden;
+	padding: 4.9rem 1.5rem 0.1rem;
+	text-align: center;
+	&__title {
+		color: $primary;
+		font-size: 4.8rem;
+		font-weight: bold;
+		line-height: 1.125;
+		margin-bottom: 6.1rem;
+	}
+	&__item {
+		margin-bottom: 4.4rem;
+	}
+	&__editor {
+		height: 100%;
+		max-width: inherit;
+	}
+
+	@media screen and (min-width: $md) {
+		background: linear-gradient(
+			to bottom,
+			$gray-100,
+			$gray-100 93%,
+			transparent 93%
+		);
+		display: flex;
+		padding: 8.4rem 1.5rem 6.9rem;
+		&__left-column,
+		&__right-column {
+			flex: 0 0 50%;
+		}
+		&__right-column {
+			text-align: left;
+		}
+		&__editor {
+			position: relative;
+			top: 7%;
+		}
+	}
+}

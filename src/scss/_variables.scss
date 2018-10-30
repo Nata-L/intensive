@@ -1,11 +1,29 @@
+// font
+$primary-font: "Montserrat", sans-serif;
+$secondary-font: "Source Sans Pro", sans-serif;
+
 // colors
-$primary: green;
+$primary: #8d81ac;
+$primary-light: #635c73;
 $secondary: red;
 
 $white: #fff;
+$gray-100: #f4f4f4;
+$gray: #333;
 $black: #000;
 
-$bg-color: #eee;
+$muted: #848e97;
+
+$bg-color: $white;
+
+// grid
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
 
 // layer
 $max-width: 75rem;
+
+// common
+$transition: 0.25s ease-in-out;

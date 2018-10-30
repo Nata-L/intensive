@@ -1,0 +1,46 @@
+.hero {
+	background: $primary url("../images/hero-bg.jpg") center/cover no-repeat;
+	min-height: calc(100vh - 215px);
+	padding: 8.8rem 1.4rem 48.3rem;
+	position: relative;
+	text-align: center;
+	&__title {
+		color: $white;
+		font-size: 8.2rem;
+		font-weight: bold;
+		line-height: 1;
+		margin-bottom: 2.2rem;
+	}
+	&__subtitle {
+		color: $primary;
+		font-size: 2.4rem;
+		line-height: 1.42;
+		margin-bottom: 1.9rem;
+	}
+	&__app-version {
+		color: $muted;
+		font-size: 1.6rem;
+		line-height: 1.25;
+		text-transform: uppercase;
+	}
+	&__cta {
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		transform: translate(-50%, 75%);
+		white-space: nowrap;
+	}
+	&__cta-button {
+		margin-bottom: 1.9rem;
+	}
+	&__trial {
+		color: $muted;
+		font-size: 1.4rem;
+		text-transform: capitalize;
+	}
+
+	@media screen and (min-width: $md) {
+		background-image: url("../images/hero-bg--large.jpg");
+		padding: 10.8rem 1.4rem 53.8rem;
+	}
+}

@@ -1,0 +1,36 @@
+.button {
+	border: 1px solid transparent;
+	cursor: pointer;
+	font-size: 2.1rem;
+	font-weight: bold;
+	padding: 1.8rem 6.2rem;
+	transition: background-color $transition;
+	&--primary {
+		background-color: $primary;
+		border-color: $primary;
+		border-radius: 2.2rem;
+		color: $white;
+
+		&:hover {
+			background-color: darken($primary, 10%);
+		}
+	}
+	&--capitalized {
+		text-transform: capitalize;
+	}
+	&--small {
+		font-size: 1.7rem;
+		padding: 1.4rem 3.4rem 1.3rem;
+	}
+}
+
+.sandwich {
+	background-color: transparent;
+	border: 0;
+	cursor: pointer;
+	margin-left: 2.6rem;
+
+	@media screen and (min-width: $md) {
+		display: none;
+	}
+}
